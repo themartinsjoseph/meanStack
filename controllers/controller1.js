@@ -1,3 +1,9 @@
+//Controllers in AngularJS serve two primary purposes:+
+  //++Initialize the data used for the view they are attached to
+  //++Contain the primary code to respond to user events, such as when a user clicks on a button
+//A controller is a JS constructor function that is instantiated by the ng-controller directive.
+
+
 //Requirements & Vars
 var express = require('express');
 var Recipe = require('../models/recipe');

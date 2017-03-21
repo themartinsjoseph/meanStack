@@ -4,6 +4,9 @@
 var app = angular.module('RecipeApp', ['ui.router', 'RecipeCtrls']);
 
 //Referencing the views
+//Each AngularJS module has a config method that allows us to provide code 
+//that runs when a module is loaded. The config method is used most commonly 
+//to setup routing, which allows your app to have multiple views.
 app.config([
   '$stateProvider',
   '$urlRouterProvider',

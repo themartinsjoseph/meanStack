@@ -1,3 +1,11 @@
+//Services provide a way to organize related code and data that can be shared by 
+//controllers and even other services. Unlike controllers, which are instantiated 
+//and destroyed as the views they are attached to come into and out of view, services 
+//are created once (singletons) and persist for the life of the application.
+
+//Services should be used to hold the bulk of your application's logic and data, 
+//thus keeping controllers focused on what they are responsible for.
+
 angular.module('RecipeServices', ['ngResource'])
 .factory('Recipe', ['$resource', function($resource) {
   return $resource('/api/recipes/:id');
